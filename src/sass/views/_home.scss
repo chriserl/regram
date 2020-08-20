@@ -1,0 +1,77 @@
+header {
+  nav {
+    width: 92.5%;
+  }
+}
+
+section[class="main"] {
+  width: 95%;
+  margin: $space-40 auto;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: $space-72;
+  justify-content: center;
+  align-items: center;
+
+  @include mediaMd {
+    width: 97.5%;
+    margin: $space-40 0 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 0;
+  }
+
+  .image-area {
+    @include flex;
+    justify-content: center;
+
+    .hd-image {
+      width: 90%;
+      @include large-shadow;
+    }
+
+    @include mediaMd {
+      order: 1;
+
+      .hd-image {
+        width: 100%;
+      }
+    }
+  }
+
+  .info-area {
+    width: 90%;
+    margin: 0 auto;
+
+    @include mediaMd {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+    }
+
+    .main-text {
+      line-height: $space-56;
+      letter-spacing: 0.35px;
+      margin-bottom: $space-40;
+    }
+
+    .aux-text {
+      margin-bottom: $space-12;
+      line-height: $space-32;
+      color: $gray-text;
+    }
+
+    .ctaz {
+      @include flex-center;
+      margin-top: $space-32;
+
+      .upgrade-button {
+        margin-right: $space-32;
+      }
+
+      .login {
+        text-decoration: underline;
+      }
+    }
+  }
+}
