@@ -5,10 +5,10 @@
 }
 
 :root {
-  font-size: calc(12px + 1.25vw);
+  font-size: calc(12px + 1.75vw);
 
   @media screen and (min-width: 600px) {
-    font-size: calc(12px + 0.35vw);
+    font-size: calc(12px + 0.45vw);
   }
 }
 
