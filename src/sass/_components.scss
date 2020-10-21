@@ -1,490 +1,365 @@
 //Typography
 
 .h1 {
-  @include h1;
+	@include h1;
 }
 
 .h2 {
-  @include h2;
+	@include h2;
 }
 
 .h3 {
-  @include h3;
+	@include h3;
 }
 
 .h4 {
-  @include h4;
+	@include h4;
 }
 
 .pl {
-  @include pl;
+	@include pl;
 }
 
 .plb {
-  @include plb;
+	@include plb;
 }
 
 .ps {
-  @include ps;
+	@include ps;
 }
 
 .psb {
-  @include psb;
+	@include psb;
+}
+
+.px {
+	@include px;
+}
+
+.pxb {
+	@include pxb;
 }
 
 //Icons
 .post-icon {
-  width: 0.85rem;
+	width: 0.85rem;
 }
 
 .standard-icon {
-  width: 1rem;
+	width: 1rem;
 }
 
 .button-icon {
-  width: 0.45rem;
+	width: 0.45rem;
 }
 
 //Buttons
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .btn-prim {
-  @include psb;
-  @include button;
-  @include light-shadow;
-  padding: $space-10 $space-24;
-  color: $prim-light;
-  background: $main-gradient;
+	@include pxb;
+	@include button;
+	@include light-shadow;
+	padding: $space-10 $space-24;
+	color: $prim-light;
+	background: $main-gradient;
 
-  &:hover {
-    background: $secondary-color;
-  }
+	&:hover {
+		background: $secondary-color;
+	}
 
-  a {
-    color: $prim-light;
-  }
+	a {
+		color: $prim-light;
+	}
 }
 
 .btn-sec {
-  @include psb;
-  @include button;
-  @include mid-shadow;
-  padding: $space-8 $space-20;
-  color: $secondary-color;
-  background: $light-gradient;
+	@include pxb;
+	@include button;
+	@include mid-shadow;
+	padding: $space-8 $space-20;
+	color: $secondary-color;
+	background: $light-gradient;
 
-  &:hover {
-    background: $secondary-color;
-    color: $prim-light;
-  }
+	&:hover {
+		background: $secondary-color;
+		color: $prim-light;
+	}
 }
 
 .btn-light {
-  @include ps;
-  @include button;
-  @include lighter-shadow;
-  padding: $space-12 $space-24;
-  color: $prim-dark;
-  background: white;
+	@include pxb;
+	@include button;
+	@include lighter-shadow;
+	padding: $space-12 $space-24;
+	color: $prim-dark;
+	background: white;
 
-  &:hover {
-    @include light-shadow;
-  }
+	&:hover {
+		@include light-shadow;
+	}
 }
 
 .icon-btn {
-  @include ps;
-  @include button;
-  @include flex-center;
+	@include px;
+	@include button;
+	@include flex-center;
 
-  span {
-    padding: 10px;
-    margin-right: $space-8;
-    border-radius: 50%;
-    background-color: white;
-    margin-bottom: $space-4;
-    @include large-shadow;
-    @include flex-center;
-    border: 1px solid $shadow-gray;
-  }
-  .btn-icon {
-    @extend .button-icon;
-  }
+	span {
+		padding: 10px;
+		margin-right: $space-8;
+		border-radius: 50%;
+		background-color: white;
+		margin-bottom: $space-4;
+		@include large-shadow;
+		@include flex-center;
+		border: 1px solid $shadow-gray;
+	}
+	.btn-icon {
+		@extend .button-icon;
+	}
 
-  &:hover {
-    color: $primary-color;
-  }
+	&:hover {
+		color: $primary-color;
+	}
 }
 
 //Profile
 .story-unseen {
-  .profile-image {
-    width: 6.5rem;
-    border-radius: 50%;
-    border: 1.5px solid $secondary-color;
-    padding: $space-6;
-  }
+	.profile-image {
+		width: 6.5rem;
+		border-radius: 50%;
+		border: 2.8px solid $secondary-color;
+		padding: $space-6;
+	}
 }
 
 //Story circle
 .story-item {
-  list-style-type: none;
-  cursor: pointer;
+	list-style-type: none;
+	cursor: pointer;
 
-  .profile-image {
-    @include lighter-shadow;
-    width: $space-96;
-    height: $space-96;
-  }
+	.profile-image {
+		@include lighter-shadow;
+		width: 4.8rem;
+		height: 4.8rem;
+	}
 }
 
 //Forms
 .form-control {
-  @include flex-center;
-  padding: $space-12 $space-24;
-  background-color: $prim-light;
-  border-radius: $space-8;
-  margin: auto;
+	@include flex-center;
+	padding: $space-12 $space-24;
+	background-color: $prim-light;
+	border-radius: $space-8;
+	margin: auto;
 
-  img {
-    @extend .standard-icon;
-    margin-right: $space-12;
-  }
+	img {
+		@extend .standard-icon;
+		margin-right: $space-12;
+	}
 
-  input {
-    @include ps;
-    width: 100%;
-    background: transparent;
-    border: none;
+	input {
+		@include ps;
+		width: 100%;
+		background: transparent;
+		border: none;
 
-    &:focus {
-      outline: none;
-    }
-  }
+		&:focus {
+			outline: none;
+		}
+	}
 
-  input::-webkit-input-placeholder {
-    @include psb;
-    color: $gray-text;
-  }
+	input::-webkit-input-placeholder {
+		@include psb;
+		color: $gray-text;
+	}
 
-  input::-moz-placeholder {
-    @include psb;
-    color: $gray-text;
-  }
+	input::-moz-placeholder {
+		@include psb;
+		color: $gray-text;
+	}
 
-  input:-ms-input-placeholder {
-    @include psb;
-    color: $gray-text;
-  }
+	input:-ms-input-placeholder {
+		@include psb;
+		color: $gray-text;
+	}
 
-  input::-ms-input-placeholder {
-    @include psb;
-    color: $gray-text;
-  }
+	input::-ms-input-placeholder {
+		@include psb;
+		color: $gray-text;
+	}
 
-  input::placeholder,
-  -ms-input-placeholder {
-    @include psb;
-    color: $gray-text;
-  }
+	input::placeholder,
+	-ms-input-placeholder {
+		@include psb;
+		color: $gray-text;
+	}
 }
 
 //Brand
 
 .brand {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0.25rem 0.75rem;
-  @include flex-center;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	padding: 0.25rem 0.75rem;
+	@include flex-center;
 
-  .brand-icon {
-    width: $space-32;
-    margin-right: $space-16;
-  }
+	.brand-icon {
+		width: $space-32;
+		margin-right: $space-16;
+	}
 
-  .brand-name {
-    @extend .h2;
-    font-family: Billabong;
-    @include flex-center;
-    margin-top: $space-4;
-    color: $prim-dark;
-  }
+	.brand-name {
+		@extend .h2;
+		font-family: Billabong;
+		@include flex-center;
+		margin-top: $space-4;
+		color: $prim-dark;
+	}
 }
 
 //Navigation
 
 nav {
-  margin: 0 auto;
-  padding: $space-24 0;
-  @include flex-center;
-  justify-content: space-between;
+	margin: 0 auto;
+	padding: $space-24 0;
+	@include flex-center;
+	justify-content: space-between;
 
-  @include mediaMd {
-    width: 80%;
-  }
+	@include mediaMd {
+		width: 80%;
+	}
 
-  .nav-icon {
-    cursor: pointer;
-    @extend .standard-icon;
-  }
+	.nav-icon {
+		cursor: pointer;
+		@extend .standard-icon;
+	}
 
-  .nav-links {
-    margin-top: $space-4;
-    @include flex-center;
+	.nav-links {
+		margin-top: $space-4;
+		@include flex-center;
 
-    .nav-item {
-      padding: $space-12;
-      margin: 0 $space-12;
-      list-style-type: none;
-      cursor: pointer;
+		.nav-item {
+			padding: $space-12;
+			margin: 0 $space-12;
+			list-style-type: none;
+			cursor: pointer;
 
-      img {
-        width: $space-24;
-      }
+			img {
+				width: $space-24;
+			}
 
-      .help {
-        color: $prim-dark;
-        margin-bottom: $space-8;
-      }
-    }
-  }
+			.help {
+				color: $prim-dark;
+				margin-bottom: $space-8;
+			}
+		}
+	}
 }
 
 //Feed card
 
 .feed-card {
-  width: 100%;
-  margin: $space-40 0;
-  margin-bottom: 0;
+	width: 100%;
+	margin: $space-40 0;
+	margin-bottom: 0;
 
-  .feed-image {
-    @include light-shadow;
-    width: 100%;
-    height: minmax(325px, 485px);
-    border-radius: $space-12;
-  }
+	.feed-image {
+		@include light-shadow;
+		width: 100%;
+		height: minmax(325px, 485px);
+		border-radius: $space-12;
+	}
 
-  .feed-controls {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: $space-16;
-    @include flex-center;
-    justify-content: space-between;
+	.feed-controls {
+		width: 95%;
+		margin: 0 auto;
+		margin-top: $space-16;
+		@include flex-center;
+		justify-content: space-between;
 
-    .post-user {
-      @include flex-center;
-      color: $gray-text;
-    }
+		.post-user {
+			@include flex-center;
+			color: $gray-text;
+		}
 
-    .actions {
-      @include flex-center;
-      color: $prim-dark;
+		.actions {
+			@include flex-center;
+			color: $prim-dark;
 
-      .like {
-        @include flex-center;
-        margin-right: $space-16;
+			.like {
+				@include flex-center;
+				margin-right: $space-16;
 
-        .like-icon {
-          @extend .post-icon;
-          //width: $space-18;
-          margin-right: $space-8;
-        }
-      }
+				.like-icon {
+					@extend .post-icon;
+					//width: $space-18;
+					margin-right: $space-8;
+				}
+			}
 
-      .comment {
-        @include flex-center;
+			.comment {
+				@include flex-center;
 
-        .comment-icon {
-          @extend .post-icon;
-          margin-right: $space-8;
-        }
-      }
-    }
-  }
+				.comment-icon {
+					@extend .post-icon;
+					margin-right: $space-8;
+				}
+			}
+		}
+	}
 
-  .feed-info {
-    margin: $space-16 $space-8 $space-12 $space-4;
+	.feed-info {
+		margin: $space-16 $space-8 $space-12 $space-4;
 
-    p {
-      display: inline;
-    }
+		p {
+			display: inline;
+		}
 
-    .user-link {
-      margin-right: $space-8;
-    }
-  }
+		.user-link {
+			margin-right: $space-8;
+		}
+	}
 }
 
 .saved {
-  .feed-image {
-    height: 250px;
-  }
+	.feed-image {
+		height: 250px;
+	}
 }
 
 //Explore Card
 
 .explore-card {
-  color: white;
+	color: white;
 
-  .card-image {
-    width: 100%;
-    border-radius: $space-16;
-  }
+	.card-image {
+		width: 100%;
+		border-radius: $space-16;
+	}
 
-  .explore-info {
-    margin-top: -5rem;
-    margin-left: $space-24;
+	.explore-info {
+		margin-top: -5rem;
+		margin-left: $space-24;
 
-    .card-user {
-      @include flex-center;
-      margin-top: $space-16;
+		.card-user {
+			@include flex-center;
+			margin-top: $space-16;
 
-      .card-user-image {
-        width: $space-40;
-        height: $space-40;
-        border-radius: 50%;
-      }
+			.card-user-image {
+				width: $space-40;
+				height: $space-40;
+				border-radius: 50%;
+			}
 
-      .user-name {
-        margin-left: $space-12;
-      }
-    }
-  }
-}
-
-//Chat List
-.chat-list {
-  padding-top: $space-24;
-  width: 100%;
-  @include mediaLd {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .chat-items {
-    width: 100%;
-
-    .chat-item {
-      width: 100%;
-      list-style-type: none;
-      @include flex;
-      align-items: flex-start;
-      margin: $space-16 0;
-      padding: $space-18 $space-28 $space-18 0;
-      border-radius: $space-12;
-
-      .profile-img {
-        @include lighter-shadow;
-        width: $space-64;
-        border-radius: 50%;
-        border: $space-4 solid $prim-light;
-      }
-      .chat-info {
-        width: 100%;
-        margin-left: $space-16;
-        padding-top: $space-6;
-
-        .chat-title {
-          @include flex-center;
-          justify-content: space-between;
-          margin-bottom: $space-12;
-        }
-      }
-    }
-  }
-}
-
-.chats-invisible {
-  display: none;
-
-  @include mediaLd {
-    display: block;
-  }
-}
-
-//Chat Board
-.chat-board {
-  height: 75vh;
-  width: 100%;
-  @include flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-y: scroll;
-  padding: $space-24 $space-20;
-
-  @include mediaLd {
-    @include scrollHide;
-  }
-  //background-color: yellow;
-
-  .chat-board-nav {
-    @include flex;
-    align-items: flex-start;
-
-    .btn-icon {
-      width: $space-24;
-
-      @include mediaLd {
-        display: none;
-      }
-    }
-
-    .profile-info {
-      margin-left: $space-32;
-      @include mediaLd {
-        margin-left: 0;
-      }
-
-      .profile-name {
-        margin-bottom: $space-4;
-      }
-    }
-  }
-
-  .chat {
-    width: 100%;
-    height: 100%;
-    @include flex;
-
-    .chat-bar {
-      width: 100%;
-      position: fixed;
-      margin-top: auto;
-      margin-left: $space-24;
-      bottom: 5.5%;
-
-      .chat-form {
-        width: max-content;
-        @include flex;
-
-        input {
-          width: 100%;
-        }
-
-        .icon {
-          width: $space-28;
-        }
-
-        .emoji-icon {
-          margin-right: $space-18;
-        }
-
-        .send-icon {
-          margin-left: $space-48;
-        }
-      }
-    }
-  }
-}
-
-.board-invisible {
-  display: none;
-
-  @include mediaLd {
-    display: block;
-  }
+			.user-name {
+				margin-left: $space-12;
+			}
+		}
+	}
 }

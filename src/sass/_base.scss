@@ -1,51 +1,51 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  font-size: calc(14px + 1.8vw);
+	font-size: calc(14px + 2vw);
 
-  @media screen and (min-width: 600px) {
-    font-size: calc(14px + 0.32vw);
-  }
+	@media screen and (min-width: 600px) {
+		font-size: calc(14px + 0.32vw);
+	}
 }
 
 @font-face {
-  font-family: Billabong;
-  src: url("../assets/fonts/Billabong.ttf");
+	font-family: Billabong;
+	src: url("../assets/fonts/Billabong.ttf");
 }
 
 @font-face {
-  font-family: PoppinsLight;
-  src: url("../assets/fonts/PoppinsLight.ttf");
+	font-family: PoppinsLight;
+	src: url("../assets/fonts/PoppinsLight.ttf");
 }
 
 @font-face {
-  font-family: PoppinsRegular;
-  src: url("../assets/fonts/PoppinsRegular.ttf");
+	font-family: PoppinsRegular;
+	src: url("../assets/fonts/PoppinsRegular.ttf");
 }
 
 @font-face {
-  font-family: PoppinsMedium;
-  src: url("../assets/fonts/PoppinsMedium.ttf");
+	font-family: PoppinsMedium;
+	src: url("../assets/fonts/PoppinsMedium.ttf");
 }
 
 @font-face {
-  font-family: PoppinsBold;
-  src: url("../assets/fonts/PoppinsSemiBold.ttf");
+	font-family: PoppinsBold;
+	src: url("../assets/fonts/PoppinsSemiBold.ttf");
 }
 
 body {
-  font-family: PoppinsRegular, Arial, Helvetica, sans-serif;
-  width: 100vw;
-  overflow-x: hidden;
-  background-color: white;
+	font-family: PoppinsRegular, Arial, Helvetica, sans-serif;
+	width: 100vw;
+	overflow-x: hidden;
+	background-color: white;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* Space System */
