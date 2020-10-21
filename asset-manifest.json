@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/regram/static/css/main.582dc9d4.chunk.css",
-    "main.js": "/regram/static/js/main.a1093e79.chunk.js",
-    "main.js.map": "/regram/static/js/main.a1093e79.chunk.js.map",
+    "main.css": "/regram/static/css/main.03d4cb09.chunk.css",
+    "main.js": "/regram/static/js/main.4034efef.chunk.js",
+    "main.js.map": "/regram/static/js/main.4034efef.chunk.js.map",
     "runtime-main.js": "/regram/static/js/runtime-main.f568283e.js",
     "runtime-main.js.map": "/regram/static/js/runtime-main.f568283e.js.map",
     "static/js/2.3a76d11f.chunk.js": "/regram/static/js/2.3a76d11f.chunk.js",
     "static/js/2.3a76d11f.chunk.js.map": "/regram/static/js/2.3a76d11f.chunk.js.map",
     "index.html": "/regram/index.html",
-    "precache-manifest.7862e0ccda65e2ca2ce77dd2be96dd34.js": "/regram/precache-manifest.7862e0ccda65e2ca2ce77dd2be96dd34.js",
+    "precache-manifest.f50be5e9a6e1092bfa6ca2c34d2cca63.js": "/regram/precache-manifest.f50be5e9a6e1092bfa6ca2c34d2cca63.js",
     "service-worker.js": "/regram/service-worker.js",
-    "static/css/main.582dc9d4.chunk.css.map": "/regram/static/css/main.582dc9d4.chunk.css.map",
+    "static/css/main.03d4cb09.chunk.css.map": "/regram/static/css/main.03d4cb09.chunk.css.map",
     "static/js/2.3a76d11f.chunk.js.LICENSE.txt": "/regram/static/js/2.3a76d11f.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/regram/static/media/jade.003fa517.jpg",
     "static/media/bell.svg": "/regram/static/media/bell.580b9bc9.svg",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.f568283e.js",
     "static/js/2.3a76d11f.chunk.js",
-    "static/css/main.582dc9d4.chunk.css",
-    "static/js/main.a1093e79.chunk.js"
+    "static/css/main.03d4cb09.chunk.css",
+    "static/js/main.4034efef.chunk.js"
   ]
 }
